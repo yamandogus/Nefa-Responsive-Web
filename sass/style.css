@@ -1,6 +1,7 @@
 @charset "UTF-8";
 * {
   font-family: poppins;
+  overflow: hidden;
 }
 
 header {
@@ -102,6 +103,14 @@ header {
   top: 15px;
 }
 
+@media (max-width: 768px) {
+  .cehp1, .img-wrapper, .star1 {
+    display: none;
+  }
+  header {
+    padding-bottom: 100px;
+  }
+}
 .buttons {
   justify-content: space-between;
 }
@@ -124,4 +133,66 @@ header {
   gap: 10px;
   color: white;
   font-weight: 500;
+}
+
+.nav-button-11 {
+  background-color: white;
+  padding: 10px 25px;
+  border: 1px solid #468EF9;
+  color: #0C66EE;
+  border-radius: 40px;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.nav-button-22 {
+  padding: 10px 25px;
+  border: none;
+  background-color: rgb(70, 142, 249);
+  border-radius: 40px;
+  gap: 10px;
+  color: white;
+  font-weight: 500;
+}
+
+.trend-1 {
+  border: none;
+}
+
+.more-1 {
+  border: none;
+  color: hsl(204, 92%, 55%);
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttons .nav-button-22 {
+    width: 90%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .buttons .nav-button-11 {
+    width: 90%;
+    display: block;
+  }
+}
+section {
+  border-radius: 10px;
+  background-color: rgb(236, 236, 236);
+}
+
+.section-1, .section-2 {
+  border-right: 1px solid black;
+}
+
+.spanTT {
+  margin: 10px;
+}
+.spanTT span {
+  color: #666666;
 }/*# sourceMappingURL=style.css.map */

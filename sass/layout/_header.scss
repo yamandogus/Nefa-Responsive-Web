@@ -1,5 +1,8 @@
+$none-display: none;
+
 *{
     font-family: poppins;
+    overflow: hidden;
 }
 
 header {
@@ -100,4 +103,15 @@ header {
         color: #a239f4;
         top: 15px;
       }
+}
+
+@media (max-width: 768px) {
+    .cehp1, .img-wrapper, .star1{
+        display: $none-display;
+    }
+    
+header{
+    padding-bottom: 100px;
+}
+    
 }
