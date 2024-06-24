@@ -1,7 +1,6 @@
 @charset "UTF-8";
 * {
   font-family: poppins;
-  overflow: hidden;
 }
 
 header {
@@ -65,17 +64,23 @@ header {
   position: absolute;
 }
 .img-wrapper::before {
+  content: "●";
   top: 20px;
   left: 100px;
   color: #5a98f2;
 }
 .img-wrapper::after {
+  position: absolute;
+  content: "●";
   bottom: 150px;
-  right: 100px;
+  right: 130px;
   color: rgb(251, 190, 156);
 }
 .img-wrapper .img-position {
-  width: 550px;
+  width: 500px;
+  height: 500px;
+  margin-top: 0;
+  margin-left: 50px;
 }
 
 .star1 {
@@ -87,7 +92,7 @@ header {
   position: absolute;
   color: #a239f4;
   left: 25px;
-  bottom: 20px;
+  bottom: 10px;
 }
 
 .cehp1 {
@@ -103,9 +108,33 @@ header {
   top: 15px;
 }
 
+@media (max-width: 1400px) {
+  .img-wrapper::after {
+    display: none;
+  }
+}
+@media (max-width: 996px) {
+  .img-wrapper {
+    display: none;
+  }
+  .img-wrapper::before, .img-wrapper::after {
+    display: none;
+  }
+  .cehp1, .star1 {
+    display: none;
+  }
+  .ttar {
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 768px) {
   .cehp1, .img-wrapper, .star1 {
     display: none;
+  }
+  .img-position {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
   }
   header {
     padding-bottom: 100px;
@@ -195,4 +224,8 @@ section {
 }
 .spanTT span {
   color: #666666;
+}
+
+.img-tt {
+  width: 20px;
 }/*# sourceMappingURL=style.css.map */
