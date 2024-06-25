@@ -1,10 +1,11 @@
 @charset "UTF-8";
 * {
-  font-family: poppins;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
   background-color: rgb(246, 253, 255);
+  padding-bottom: 50px;
 }
 
 .logo1 {
@@ -18,7 +19,9 @@ header {
 .logo2 {
   font-weight: bolder;
   margin-right: 20px;
+  position: relative;
 }
+
 .logo2::after {
   content: "✦";
   position: absolute;
@@ -40,7 +43,7 @@ header {
 }
 
 .header-h1 {
-  font-family: poppins;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   line-height: 55px;
 }
@@ -57,36 +60,39 @@ header {
 .img-wrapper {
   position: relative;
   display: inline-block;
+  margin-left: 170px;
 }
-.img-wrapper::before, .img-wrapper::after {
+
+.img-wrapper::before,
+.img-wrapper::after {
   content: "●";
   font-size: 50px;
   position: absolute;
 }
+
 .img-wrapper::before {
-  content: "●";
-  top: 20px;
-  left: 100px;
+  top: 40px;
+  left: 150px;
   color: #5a98f2;
 }
+
 .img-wrapper::after {
-  position: absolute;
-  content: "●";
-  bottom: 150px;
-  right: 130px;
+  bottom: 120px;
+  right: 90px;
   color: rgb(251, 190, 156);
 }
-.img-wrapper .img-position {
-  width: 500px;
-  height: 500px;
-  margin-top: 0;
-  margin-left: 50px;
+
+.img-position {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .star1 {
   font-size: 28px;
   position: relative;
 }
+
 .star1::after {
   content: "✦";
   position: absolute;
@@ -99,6 +105,7 @@ header {
   font-size: 40px;
   position: relative;
 }
+
 .cehp1::after {
   content: "●";
   position: absolute;
@@ -109,7 +116,18 @@ header {
 }
 
 @media (max-width: 1400px) {
-  .img-wrapper::after {
+  .img-wrapper {
+    margin-left: 170px;
+  }
+}
+@media (max-width: 1200px) {
+  .img-wrapper {
+    margin-left: 0;
+  }
+  .img-wrapper::before,
+  .img-wrapper::after,
+  .cehp1,
+  .star1 {
     display: none;
   }
 }
@@ -117,41 +135,23 @@ header {
   .img-wrapper {
     display: none;
   }
-  .img-wrapper::before, .img-wrapper::after {
-    display: none;
-  }
-  .cehp1, .star1 {
-    display: none;
-  }
   .ttar {
     margin-bottom: 20px;
   }
 }
 @media (max-width: 768px) {
-  .cehp1, .img-wrapper, .star1 {
+  .img-wrapper {
     display: none;
   }
-  .img-position {
-    width: 100%;
-    height: auto;
-    margin-left: 0;
-  }
-  header {
-    padding-bottom: 100px;
+  .img-wrapper::before,
+  .img-wrapper::after,
+  .cehp1,
+  .star1 {
+    display: none;
   }
 }
 .buttons {
   justify-content: space-between;
-}
-
-.nav-button-1 {
-  background-color: white;
-  padding: 10px 25px;
-  border: 1px solid #468EF9;
-  color: #0C66EE;
-  border-radius: 40px;
-  gap: 10px;
-  font-weight: 500;
 }
 
 .nav-button-2 {
@@ -226,6 +226,131 @@ section {
   color: #666666;
 }
 
+.abs-sec {
+  padding: 20px 0 30px 0;
+}
+
 .img-tt {
   width: 20px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.graf {
+  border-radius: 10px;
+}
+
+@media (max-width: 598px) {
+  .graf {
+    width: 90px;
+    border-radius: 10px;
+  }
+}
+.decrease {
+  font-weight: bolder;
+  color: red;
+}
+
+.plus {
+  font-weight: bolder;
+  color: green;
+}
+
+.text-cont h2 {
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+.text-cont .span1 {
+  margin: 30px 0;
+}
+
+select {
+  border: 2px solid rgb(56, 56, 182);
+  border-radius: 10px;
+}
+
+input {
+  border-radius: 10px;
+}
+
+.img2 {
+  transform: rotate(10deg);
+}
+
+input {
+  max-width: 400px;
+}
+
+.select-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100px;
+}
+
+#nefaİmg {
+  width: 100%;
+}
+
+.nefaDivS3 {
+  padding-left: 20px;
+}
+.nefaDivS3 .nefaNew {
+  color: rgb(14, 101, 232);
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 52px;
+}
+.nefaDivS3 ul {
+  margin-top: 10px;
+}
+.nefaDivS3 ul li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+.nefaDivS3 ul li::before {
+  content: "✅";
+  border-radius: 50%;
+  width: 20px;
+}
+
+.sec4div .textsp {
+  display: inline-block;
+  margin-top: 15px;
+}
+.sec4div h2 {
+  display: inline-block;
+  margin-top: 25px;
+  font-weight: 600;
+}
+.sec4div h2 span {
+  color: rgb(14, 101, 232);
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 52px;
+}
+.sec4div h5 {
+  font-weight: 600;
+}
+.sec4div .bnts-1 {
+  padding: 10px 25px;
+  border: 1px solid #468EF9;
+  color: #0C66EE;
+  border-radius: 40px;
+  gap: 10px;
+  font-weight: 500;
+}
+.sec4div .bnts-2 {
+  border: none;
+  color: rgb(47, 124, 240);
+  text-decoration-color: #0C66EE;
+}
+
+.sec3İmg {
+  display: block;
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

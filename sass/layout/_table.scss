@@ -1,0 +1,31 @@
+.abs-sec{
+    padding: 20px 0 30px 0;
+}
+.img-tt{
+    width: 20px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+.graf{
+    border-radius: 10px;
+}
+
+@media(max-width:598px){
+    .graf {
+       width: 90px;
+       border-radius: 10px;
+      }
+    }
+
+.decrease{
+    font-weight: bolder;
+    color: red;
+}
+
+.plus{
+    font-weight: bolder;
+    color: green;
+}
+

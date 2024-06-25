@@ -1,150 +1,158 @@
-$none-display: none;
-
-*{
-    font-family: poppins;
+* {
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
-  background-color: rgb(246, 253, 255);
+    background-color: rgb(246, 253, 255);
+    padding-bottom: 50px;
 }
+
 .logo1 {
-  background-color: rgb(58, 134, 247);
-  color: white;
-  padding: 5px;
-  font-weight: bolder;
-  border-radius: 5px;
+    background-color: rgb(58, 134, 247);
+    color: white;
+    padding: 5px;
+    font-weight: bolder;
+    border-radius: 5px;
 }
 
 .logo2 {
-  font-weight: bolder;
-  margin-right: 20px;
-  &::after {
+    font-weight: bolder;
+    margin-right: 20px;
+    position: relative;
+}
+
+.logo2::after {
     content: "✦";
     position: absolute;
     width: 10px;
     height: 10px;
     color: #a239f4;
     top: 6px;
-  }
 }
 
-.col-1{
+.col-1 {
     padding-top: 50px;
 }
 
-.singUp{
+.singUp {
     color: rgba(70, 142, 249, 1);
     opacity: 90%;
     font-weight: bolder;
     line-height: 50px;
 }
 
-.header-h1{
-    font-family: poppins;
+.header-h1 {
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     line-height: 55px;
 }
-.header-span-h1{
-    color: rgb(32,161,246);
-    ;
+
+.header-span-h1 {
+    color: rgb(32, 161, 246);
 }
 
-.header-p1{
+.header-p1 {
     line-height: 30px;
     color: #666666;
 }
 
-.img-wrapper{
+.img-wrapper {
     position: relative;
     display: inline-block;
-    &::before, &::after{
-        content: "●";
-        font-size: 50px;
-        position: absolute;
-    }
-    &::before{
-        content: "●";
-        top: 20px;
-        left: 100px;
-        color: #5a98f2;
-    }
-
-    &::after{
-        position: absolute;
-        content: "●";
-        bottom: 150px;
-        right: 130px;
-        color: rgba(251, 190, 156, 1);
-    }
-    .img-position{
-        width: 500px;
-        height: 500px;
-        margin-top: 0;
-        margin-left: 50px;
-    }
+    margin-left: 170px;
 }
 
+.img-wrapper::before,
+.img-wrapper::after {
+    content: "●";
+    font-size: 50px;
+    position: absolute;
+}
 
-.star1{
+.img-wrapper::before {
+    top: 40px;
+    left: 150px;
+    color: #5a98f2;
+}
+
+.img-wrapper::after {
+    bottom: 120px;
+    right: 90px;
+    color: rgba(251, 190, 156, 1);
+}
+
+.img-position {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.star1 {
     font-size: 28px;
     position: relative;
-    &::after {
-        content: "✦";
-        position: absolute;
-        color: #a239f4;
-        left: 25px;
-        bottom: 10px;
-      }
 }
 
-.cehp1{
+.star1::after {
+    content: "✦";
+    position: absolute;
+    color: #a239f4;
+    left: 25px;
+    bottom: 10px;
+}
+
+.cehp1 {
     font-size: 40px;
     position: relative;
-    &::after {
-        content: "●";
-        position: absolute;
-        width: 45px;
-        height: 45px;
-        color: #a239f4;
-        top: 15px;
-      }
 }
-@media (max-width: 1400px){
-    .img-wrapper {
-       &::after{
-          display: none;
-        }
-      }
+
+.cehp1::after {
+    content: "●";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    color: #a239f4;
+    top: 15px;
 }
-@media (max-width: 996px) {
+
+@media (max-width: 1400px) {
     .img-wrapper {
-      display: none;
-      &::before ,&::after{
-        display: none;
-      }
+        margin-left: 170px;
     }
-    .cehp1, .star1{
-        display: none;
-    }
-    .ttar{
-        margin-bottom: 20px;
-    }
-  }
+}
 
-@media (max-width: 768px) {
-    .cehp1, .img-wrapper, .star1{
-        display: none;
-    }
-
-    .img-position {
-        width: 100%;
-        height: auto;
+@media (max-width: 1200px) {
+    .img-wrapper {
         margin-left: 0;
     }
-    
-    header{
-        padding-bottom: 100px;
+    .img-wrapper::before,
+    .img-wrapper::after,
+    .cehp1,
+    .star1 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 996px) {
+    .img-wrapper {
+        display: none;
+    }
+
+
+    .ttar {
+        margin-bottom: 20px;
     }
 }
 
+@media (max-width: 768px) {
+    .img-wrapper {
+        display: none;
+    }
 
+    .img-wrapper::before,
+    .img-wrapper::after,
+    .cehp1,
+    .star1 {
+        display: none;
+    }
+}

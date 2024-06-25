@@ -1,0 +1,39 @@
+.sec4div{
+    .textsp{
+        display: inline-block;
+        margin-top: 15px;
+ } 
+    h2{
+        display: inline-block;
+        margin-top: 25px;
+        font-weight: 600;
+        span{
+            color: rgba(14, 101, 232, 1);
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 52px;
+        }
+    } 
+    h5{
+        font-weight: 600;
+    }
+    .bnts-1{
+        padding: 10px 25px;
+        border: 1px solid #468EF9;
+        color: #0C66EE;
+        border-radius: 40px;
+        gap: 10px;
+        font-weight: 500;
+    }
+    .bnts-2{
+      border: none;
+      color: rgba(47, 124, 240, 1);
+      text-decoration-color: #0C66EE;
+    }
+}
+
+.sec3İmg{
+    display: block;
+    margin: 0 auto;
+}
