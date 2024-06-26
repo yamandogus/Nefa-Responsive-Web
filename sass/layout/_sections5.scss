@@ -1,0 +1,17 @@
+.prag-list{
+    padding-top: 120px;
+    h2{
+        font-weight: 600;
+    }
+    ul li{
+        font-weight: 600;
+        list-style-type: none;
+        margin-bottom: 20px;
+        &:nth-child(n+2){
+         margin-top: 15px;
+        }
+        &::before{
+            content: "✅";
+        }
+    }
+}

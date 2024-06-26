@@ -1,0 +1,33 @@
+$boderRg: 1px solid black;
+.logoNeff{
+    border-right: $boderRg;
+  div  h4 span{
+        font-weight: bolder;
+        padding: 5px;
+        background-color: rgb(58, 134, 247);
+        border-radius: 5px;
+        color: white;
+    }   
+}
+.footer-container{
+    border-top: $boderRg;
+}
+
+@mixin listDc{
+    div ul li a{
+        text-decoration: none;
+        color: rgb(74, 74, 74);
+    }
+}
+
+.nefaLınk{
+    border-right: $boderRg;
+    @include listDc;
+}
+
+.nameTT{
+    div{
+        border-top: 1px solid black;
+        padding: 10px 0 0 0;
+    }
+}

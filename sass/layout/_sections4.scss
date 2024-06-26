@@ -36,4 +36,11 @@
 .sec3İmg{
     display: block;
     margin: 0 auto;
+    &::after{
+        content: "●";
+        position: absolute;
+        margin-right: 150px;
+        width: 500px;
+        height: 500px;
+    }  
 }

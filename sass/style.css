@@ -28,7 +28,7 @@ header {
   width: 10px;
   height: 10px;
   color: #a239f4;
-  top: 6px;
+  top: -10px;
 }
 
 .col-1 {
@@ -154,6 +154,15 @@ header {
   justify-content: space-between;
 }
 
+.nav-button-1 {
+  padding: 10px 25px;
+  border-color: rgb(70, 142, 249);
+  color: #0C66EE;
+  border-radius: 40px;
+  gap: 10px;
+  font-weight: 500;
+}
+
 .nav-button-2 {
   padding: 10px 25px;
   border: none;
@@ -258,6 +267,34 @@ section {
   color: green;
 }
 
+.logoNeff {
+  border-right: 1px solid black;
+}
+.logoNeff div h4 span {
+  font-weight: bolder;
+  padding: 5px;
+  background-color: rgb(58, 134, 247);
+  border-radius: 5px;
+  color: white;
+}
+
+.footer-container {
+  border-top: 1px solid black;
+}
+
+.nefaLınk {
+  border-right: 1px solid black;
+}
+.nefaLınk div ul li a {
+  text-decoration: none;
+  color: rgb(74, 74, 74);
+}
+
+.nameTT div {
+  border-top: 1px solid black;
+  padding: 10px 0 0 0;
+}
+
 .text-cont h2 {
   margin-bottom: 30px;
   font-weight: bolder;
@@ -291,7 +328,7 @@ input {
 }
 
 #nefaİmg {
-  width: 100%;
+  width: 80%;
 }
 
 .nefaDivS3 {
@@ -353,4 +390,58 @@ input {
 .sec3İmg {
   display: block;
   margin: 0 auto;
+}
+.sec3İmg::after {
+  content: "●";
+  position: absolute;
+  margin-right: 150px;
+  width: 500px;
+  height: 500px;
+}
+
+.prag-list {
+  padding-top: 120px;
+}
+.prag-list h2 {
+  font-weight: 600;
+}
+.prag-list ul li {
+  font-weight: 600;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.prag-list ul li:nth-child(n+2) {
+  margin-top: 15px;
+}
+.prag-list ul li::before {
+  content: "✅";
+}
+
+.sec-6 {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.85) -9.25%, rgba(255, 255, 255, 0.75) -9.25%, rgba(230, 240, 255, 0.85) 108.74%);
+  border-radius: 20px;
+  margin: 0 20px;
+}
+.sec-6 .sec-6-img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sec-7 {
+  padding-top: 30px;
+}
+.sec-7 h3 {
+  margin: 20px 0;
+}
+.sec-7 span a {
+  text-decoration: none;
+  font-weight: 600;
+}
+.sec-7 details summary {
+  margin-bottom: 25px;
+  border-bottom: 1px solid black;
+}
+.sec-7 .sec-7-img {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */
